@@ -1,0 +1,53 @@
+.toolbar {
+  width: var(--toolbar-width);
+  background: var(--bg-secondary);
+  border-right: 2px solid var(--bg-grid);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  flex-shrink: 0;
+}
+
+.toolBtn {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-primary);
+  border: 2px solid var(--bg-grid);
+  color: var(--text-secondary);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: all 0.1s ease;
+}
+
+.toolBtn:hover {
+  border-color: var(--neon-purple);
+  color: var(--neon-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.toolBtnActive {
+  border-color: var(--neon-pink);
+  color: var(--neon-pink);
+  box-shadow: var(--glow-pink);
+  background: #1c0d2e;
+}
+
+.toolLabel {
+  font-size: 6px;
+  opacity: 0.8;
+}
+
+.separator {
+  width: 32px;
+  height: 2px;
+  background: var(--bg-grid);
+  margin: 4px 0;
+}

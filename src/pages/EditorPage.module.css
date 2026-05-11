@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.bottomBar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-top: 2px solid var(--bg-grid);
+}

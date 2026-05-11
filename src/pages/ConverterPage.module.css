@@ -1,0 +1,164 @@
+.page {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.controls {
+  width: 260px;
+  background: var(--bg-secondary);
+  border-right: 2px solid var(--bg-grid);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.fileLabel {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fileInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label input {
+  width: 70px;
+}
+
+.status {
+  font-size: 13px;
+  color: var(--neon-mint);
+}
+
+.sendBtn {
+  margin-top: auto;
+}
+
+/* ===== Result area ===== */
+.resultArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.previewRow {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  overflow: auto;
+  padding: 16px;
+  min-height: 0;
+}
+
+.previewPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.previewLabel {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--neon-purple);
+  text-shadow: var(--glow-purple);
+}
+
+.previewImg {
+  max-width: 300px;
+  max-height: 400px;
+  border: 2px solid var(--bg-grid);
+  image-rendering: auto;
+}
+
+.previewCanvas {
+  image-rendering: pixelated;
+  border: 2px solid var(--bg-grid);
+  max-width: 550px;
+  max-height: 480px;
+}
+
+/* ===== Color legend below preview ===== */
+.colorLegend {
+  background: var(--bg-secondary);
+  border-top: 2px solid var(--bg-grid);
+  padding: 8px 12px;
+  flex-shrink: 0;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.legendTitle {
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  color: var(--neon-purple);
+  text-shadow: var(--glow-purple);
+  margin-bottom: 6px;
+}
+
+.legendRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-grid);
+  padding: 2px 6px;
+}
+
+.legendSwatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--bg-grid);
+}
+
+.legendCode {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--text-primary);
+}

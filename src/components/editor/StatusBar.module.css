@@ -1,0 +1,40 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 12px;
+  background: var(--bg-secondary);
+  border-top: 2px solid var(--bg-grid);
+  min-height: 28px;
+  flex-shrink: 0;
+}
+
+.item {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.zoomBtn {
+  background: var(--bg-primary);
+  border: 2px solid var(--bg-grid);
+  color: var(--text-secondary);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+
+.zoomBtn:hover {
+  border-color: var(--neon-purple);
+  color: var(--neon-purple);
+}
